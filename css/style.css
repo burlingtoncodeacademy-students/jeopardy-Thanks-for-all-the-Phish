@@ -1,0 +1,156 @@
+/* Stylings for home page */
+h1 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* brings you to the next page, this styling applies on all pages */
+#link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 75px;
+}
+
+
+/* Stylings for round one/round two begin here */ 
+/* and they read from top to bottom through page still */
+.flexcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  background-color: blue;
+}
+
+.item {
+  display: flex;
+  margin: 0px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  color: yellow;
+}
+
+/* big blue grid above is a flexy grid and the player input board is just a grid */
+#inputboard {
+  display: grid;
+  grid-template-columns: 100px 100px;
+}
+
+#what {
+  border: 1px solid black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#guess {
+  border: 1px solid black;
+}
+
+#pass {
+  border: 1px solid black;
+}
+
+/* The footer is where the players scores will be kept */
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#left {
+  display: flex;
+  display: inline-block;
+}
+
+#middle {
+  display: flex;
+  display: inline-block;
+}
+
+#right {
+  display: flex;
+  display: inline-block;
+}
+
+/* Moving into final jeopardy */
+/* used combination of grid and flexy grid */
+#big-space {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#category {
+  display: flex;
+  text-align: center;
+  display: block;
+  width: 600px;
+  border: 1px solid black;
+  justify-content: center;
+  background-color: blue;
+  color: yellow;
+}
+
+#blank {
+  display: flex;
+  border: 1px solid black;
+  height: 300px;
+  width: 600px;
+  background-color: blue;
+  color: yellow;
+}
+
+#flexygrid {
+  display: flex;
+  justify-content: center;
+  
+}
+
+section {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 50px 50px;
+  background-color: blue;
+  color: yellow;
+}
+
+#amount {
+  grid-column-start: 1; 
+  grid-column-end: 3;
+  border: 1px solid black;
+}
+
+#bet {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 1px solid black;
+  background-color: blue;
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#answer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border: 1px solid black;
+}
