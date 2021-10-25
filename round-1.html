@@ -11,45 +11,47 @@
   
       <h1>Jeopardy!</h1>
       <h4>Round One</h4>
-    
+      <div id="timer-long"></div>
+      <div id="timer-short"></div>
+
     <div class="flexcontainer">
       <div id="grid">
-        <p class="item">category</p>
-        <p class="item">category</p>
-        <p class="item">category</p>
-        <p class="item">category</p>
-        <p class="item">category</p>
-        <p class="item">category</p>
-        <p class="item">100</p>
-        <p class="item">100</p>
-        <p class="item">100</p>
-        <p class="item">100</p>
-        <p class="item">100</p>
-        <p class="item">100</p>
-        <p class="item">200</p>
-        <p class="item">200</p>
-        <p class="item">200</p>
-        <p class="item">200</p>
-        <p class="item">200</p>
-        <p class="item">200</p>
-        <p class="item">300</p>
-        <p class="item">300</p>
-        <p class="item">300</p>
-        <p class="item">300</p>
-        <p class="item">300</p>
-        <p class="item">300</p>
-        <p class="item">400</p>
-        <p class="item">400</p>
-        <p class="item">400</p>
-        <p class="item">400</p>
-        <p class="item">400</p>
-        <p class="item">400</p>
-        <p class="item">500</p>
-        <p class="item">500</p>
-        <p class="item">500</p>
-        <p class="item">500</p>
-        <p class="item">500</p>
-        <p class="item">500</p>
+        <p class="category">category</p>
+        <p class="category">category</p>
+        <p class="category">category</p>
+        <p class="category">category</p>
+        <p class="category">category</p>
+        <p class="category">category</p>
+        <p id="item-one" class="item">100</p>
+        <p id="item-two" class="item">100</p>
+        <p id="item-three" class="item">100</p>
+        <p id="item-four" class="item">100</p>
+        <p id="item-five" class="item">100</p>
+        <p id="item-six" class="item">100</p>
+        <p id="item-seven" class="item">200</p>
+        <p id="item-eight" class="item">200</p>
+        <p id="item-nine" class="item">200</p>
+        <p id="item-ten" class="item">200</p>
+        <p id="item-eleven" class="item">200</p>
+        <p id="item-twelve" class="item">200</p>
+        <p id="item-thirteen" class="item">300</p>
+        <p id="item-fourteen" class="item">300</p>
+        <p id="item-fifteen" class="item">300</p>
+        <p id="item-sixteen" class="item">300</p>
+        <p id="item-seventeen" class="item">300</p>
+        <p id="item-eighteen" class="item">300</p>
+        <p id="item-nineteen" class="item">400</p>
+        <p id="item-twenty" class="item">400</p>
+        <p id="item-twentyone" class="item">400</p>
+        <p id="item-twentytwo" class="item">400</p>
+        <p id="item-twentythree" class="item">400</p>
+        <p id="item-twentyfour" class="item">400</p>
+        <p id="item-twentyfive" class="item">500</p>
+        <p id="item-twentysix" class="item">500</p>
+        <p id="item-twentyseven" class="item">500</p>
+        <p id="item-twentyeight" class="item">500</p>
+        <p id="item-twentynine" class="item">500</p>
+        <p id="item-thirty" class="item">500</p>
       </div>
     </div>
     
@@ -59,19 +61,24 @@
       <div id="inputboard">
         <p id="what">
           <label for="whatis">What is...?</label>
-          <input type="text" id="whatis">  
+          <input type="text" id="what-is">  
         </p>
-        <button type="button">Guess</button>
-        <button type="button">Pass</button>
+        <button id="guess" type="button">Guess</button>
+        <button id="pass" type="button">Pass</button>
       </div>
     </div>
     
+    <div id="player-marker">
+      Player 1's turn
+    </div>
+
     <footer>
-      <div id="left">Player 1: 0</div>
-      <div id="middle">Player 2: 0</div>
-      <div id="right">Player 3: 0</div>
+      <div id="player-one">Player 1: <p id="player-one-score">0</p></div>
+      <div id="player-two">Player 2: <p id="player-two-score">0</p></div>
+      <div id="player-three">Player 3: <p id="player-three-score">0</p></div>
     </footer>
 
     <a id="link" href="round-2.html">Double Jeopardy</a>
+    <script src="./scripts/restart.js"></script>
   </body>
 </html>

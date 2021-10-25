@@ -7,6 +7,15 @@ h4 {
   text-align: center;
 }
 
+#timer-long {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+#timer-short {
+  text-align: center;
+}
+
 img {
   display: block;
   margin-right: auto;
@@ -21,8 +30,7 @@ img {
   height: 75px;
 }
 
-
-/* Stylings for round one/round two begin here */ 
+/* Stylings for round one/round two begin here */
 /* and they read from top to bottom through page still */
 .flexcontainer {
   display: flex;
@@ -31,18 +39,58 @@ img {
 
 #grid {
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 125px 125px 125px 125px 125px 125px;
   background-color: blue;
+}
+
+.category {
+  display: flex;
+  margin: 0px;
+  height: 125px;
+  width: 125px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  color: yellow;
 }
 
 .item {
   display: flex;
   margin: 0px;
-  height: 100px;
+  height: 125px;
+  width: 125px;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
   color: yellow;
+}
+
+div.grid {
+  display: flex;
+}
+
+p.question {
+  display: none;
+}
+
+p.answer {
+  display: none;
+}
+
+p.value:hover {
+  cursor: pointer;
+}
+
+div.item:hover {
+  cursor: pointer;
+}
+
+div.item.selected p.question {
+  display: block;
+}
+
+div.item.selected p.value {
+  display: none;
 }
 
 /* big blue grid above is a flexy grid and the player input board is just a grid */
@@ -65,23 +113,27 @@ img {
   border: 1px solid black;
 }
 
+#player-marker {
+  text-align: center;
+}
+
 /* The footer is where the players scores will be kept */
 footer {
   display: flex;
   justify-content: space-around;
 }
 
-#left {
+#player-one {
   display: flex;
   display: inline-block;
 }
 
-#middle {
+#player-two {
   display: flex;
   display: inline-block;
 }
 
-#right {
+#player-three {
   display: flex;
   display: inline-block;
 }
@@ -93,7 +145,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
 #category {
@@ -119,7 +170,6 @@ footer {
 #flexygrid {
   display: flex;
   justify-content: center;
-  
 }
 
 section {
@@ -131,7 +181,7 @@ section {
 }
 
 #amount {
-  grid-column-start: 1; 
+  grid-column-start: 1;
   grid-column-end: 3;
   border: 1px solid black;
 }
