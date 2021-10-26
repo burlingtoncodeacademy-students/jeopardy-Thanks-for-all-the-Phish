@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Jeopardy!</h1>
+    <h4>Round One</h4>
+    <div id="timer-long"></div>
+    <div id="timer-short"></div>
+<div class="flexcontainer">
+    <div id="grid">
+        <p class="category">category</p>
+        <p class="category">category</p>
+        <p class="category">category</p>
+        <p class="category">category</p>
+        <p class="category">category</p>
+        <p class="category">category</p>
+
+    </div>
+</div>
+
+
+    <div class="flexcontainer">
+        <div id="inputboard">
+          <p id="what">
+            <label for="whatis">What is...?</label>
+            <input type="text" id="what-is">  
+          </p>
+          <button id="guess" type="button">Guess</button>
+          <button id="pass" type="button">Pass</button>
+        </div>
+      </div>
+      
+      <div id="player-marker">
+        Player 1's turn
+      </div>
+  
+      <footer>
+        <div id="player-one">Player 1: <p id="player-one-score">0</p></div>
+        <div id="player-two">Player 2: <p id="player-two-score">0</p></div>
+        <div id="player-three">Player 3: <p id="player-three-score">0</p></div>
+      </footer>
+  
+      <a id="link" href="round-2.html">Double Jeopardy</a>
+      <script src="./scripts/restart.js"></script>
+</body>
+</html>
